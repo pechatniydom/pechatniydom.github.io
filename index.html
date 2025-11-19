@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Печатный Дом — фотопечать с теплом</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(248, 244, 236, 0.10), rgba(248, 244, 236, 0.15)), url('images/hero-bg.jpg') center/cover no-repeat;
+            padding: 220px 0;
+            border-bottom: 2px solid var(--white);
+        }
+        .advantages {
+            text-align: center;
+        }
+        .adv-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin: 0 auto;
+        }
+        .adv-item {
+            text-align: center;
+            width: 100%;
+            max-width: 2000px;
+        }
+        .adv-item p {
+            white-space: nowrap;
+        }
+        .adv-item h3 {
+            margin: 20px 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-wrapper">
+                <img src="images/logo.jpg" alt="Логотип Печатный Дом" class="logo-icon">
+                <div class="logo-text">Печатный <span>Дом</span></div>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="active">О нас</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <h2 style="text-align: center;">О нашей компании</h2>
+            <div class="adv-grid">
+                <div class="adv-item">
+                    <h3>Наша история</h3>
+                    <p>Мы на рынке печатного производства более 15 лет, работаем на собственном оборудовании. У нас большой опыт в сфере графики и технологий печати. Мы работаем с различными компаниями и ИП.</p>
+
+                    <h3>Наши ценности</h3>
+                    <p>Мы ценим качество, внимание к деталям и индивидуальный подход к каждому клиенту.</p>
+                
+                    <h3>Наше развитие</h3>
+                    <p>Постоянно обновляем оборудование и изучаем новые технологии для современных решений.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p><strong>Адрес:</strong> г. Кулебаки, ул. Адмирала Макарова, д 14 ТЦ "Адмирал".</p>
+                    <p><strong>Телефон:</strong> +79200636319 +79200179255 (WhatsApp, Telegram)</p>
+                    <p><strong>Почта:</strong> Fotonet152@yandex.ru</p>
+                    <p><strong>Режим работы:</strong> ПН-ПТ с 9:00 до 18:00, СБ-ВС с 9:00 до 16:00. Без выходных.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Печатный Дом. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
