@@ -34,6 +34,60 @@
         .adv-item h3 {
             margin: 20px 0 10px 0;
         }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 100px 0;
+            }
+            .adv-item p {
+                white-space: normal;
+                text-align: left;
+                line-height: 1.5;
+            }
+              /* Навигация */
+    .header-container {
+        flex-direction: column !important;
+        gap: 1px !important;
+        padding: 10px !important;
+    }
+    
+    .nav {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 30px !important;
+    }
+    
+    .nav a {
+        font-size: 0.95rem !important;
+        padding: 1px 12px !important;
+    }
+}
+            .contact-info p {
+                text-align: left;
+                font-size: 14px;
+            }
+        
+
+        /* Для очень маленьких экранов */
+        @media (max-width: 480px) {
+            .hero {
+                padding: 80px 0;
+            }
+            .adv-item {
+                padding: 0 15px;
+            }
+            .adv-item h3 {
+                font-size: 1.2rem;
+            }
+            .adv-item p {
+                font-size: 14px;
+            }
+            .contact h2,
+            .advantages h2 {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>

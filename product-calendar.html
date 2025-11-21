@@ -7,13 +7,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        .product-details table tr {
-            background: rgba(255, 255, 255, 0.8) !important;
-        }
-        .product-details table tr:hover {
-            background: rgba(222, 184, 135, 0.3) !important;
-        }
-    </style>
+@media (max-width: 768px) {
+    .product-details-content {
+        display: block !important;
+    }
+    
+    .product-image, 
+    .product-info {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+    
+    .product-image img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .size-table {
+        width: 100%;
+    }
+    
+    table {
+        width: 100% !important;
+        font-size: 0.8rem;
+    }
+    
+    .size-table th,
+    .size-table td {
+        padding: 8px 5px;
+        white-space: normal;
+    }
+}
+/* Навигация */
+    .header-container {
+        flex-direction: column !important;
+        gap: 1px !important;
+        padding: 10px !important;
+    }
+    
+    .nav {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 30px !important;
+    }
+    
+    .nav a {
+        font-size: 0.95rem !important;
+        padding: 1px 12px !important;
+    }
+
+</style>
 </head>
 <body class="product-page">
     <header class="header">

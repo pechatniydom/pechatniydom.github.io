@@ -6,6 +6,74 @@
     <title>Плоттерная резка — Печатный Дом</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+     <style>
+        /* Мобильная адаптация для УФ-печати */
+@media (max-width: 768px) {
+    .products-grid-horizontal {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+        padding: 15px !important;
+    }
+    
+    .product-card-vertical {
+        padding: 20px !important;
+    }
+    
+    .product-card-vertical .product-image img {
+        height: 300px !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    .product-card-vertical h1 {
+        font-size: 1.5rem !important;
+        text-align: center !important;
+    }
+    
+    .product-card-vertical p {
+        font-size: 1rem !important;
+        text-align: left !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Навигация */
+    .header-container {
+        flex-direction: column !important;
+        gap: 1px !important;
+        padding: 10px !important;
+    }
+    
+    .nav {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 30px !important;
+    }
+    
+    .nav a {
+        font-size: 0.95rem !important;
+        padding: 1px 12px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid-horizontal {
+        padding: 10px !important;
+        gap: 20px !important;
+    }
+    
+    .product-card-vertical {
+        padding: 25px !important;
+    }
+    
+    .product-card-vertical .product-image img {
+        height: 300px !important;
+    }
+    
+    .product-card-vertical h1 {
+        font-size: 1.3rem !important;
+    }
+}
+    </style>
     <style>
         /* Стиль для одинакового цвета строк в таблице */
         .product-details table tr {

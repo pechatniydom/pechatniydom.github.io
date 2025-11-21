@@ -6,6 +6,93 @@
     <title>Каталог — Печатный Дом</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+   <style>
+    /* Стили для мобильных устройств */
+    @media (max-width: 768px) {
+        
+        .hero-catalog {
+            padding: 100px 0 !important;
+        }
+       /* Навигация */
+    .header-container {
+        flex-direction: column !important;
+        gap: 1px !important;
+        padding: 10px !important;
+    }
+    
+    .nav {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 30px !important;
+    }
+    
+    .nav a {
+        font-size: 0.95rem !important;
+        padding: 1px 12px !important;
+    }
+}
+        .products-grid {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Увеличил минимальную ширину */
+            gap: 20px;
+        }
+        .product-card {
+            padding: 20px 15px; /* Уменьшил боковые отступы */
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            max-height: 220px; /* Увеличил максимальную высоту картинок */
+            object-fit: contain;
+        }
+        .product-card h3 {
+            font-size: 1.1rem; /* Чуть увеличил заголовок */
+            margin: 15px 0 8px 0;
+        }
+        .product-card p {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+        .price {
+            font-size: 1.3rem; /* Увеличил цену */
+            margin: 12px 0;
+        }
+    
+
+    /* Для очень маленьких экранов */
+    @media (max-width: 480px) {
+        .hero-catalog {
+            padding: 80px 0 !important;
+        }
+        .products-grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .product-card {
+            padding: 18px 12px; /* Еще меньше боковых отступов */
+            margin: 0 5px; /* Добавил небольшие внешние отступы */
+        }
+        .product-card img {
+            max-height: 200px; /* Сохранил большую высоту */
+        }
+        .container {
+            padding: 0 8px; /* Уменьшил отступы контейнера */
+        }
+    }
+
+    /* Для средних телефонов */
+    @media (max-width: 375px) {
+        .product-card {
+            padding: 15px 10px;
+            margin: 0 3px;
+        }
+        .product-card img {
+            max-height: 190px;
+        }
+        .container {
+            padding: 0 5px;
+        }
+    }
+</style>
 </head>
 <body>
     <header class="header">
@@ -211,6 +298,4 @@
         </div>
     </footer>
 </body>
-
 </html>
-
